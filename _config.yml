@@ -1,18 +1,18 @@
 # Site settings
-title: BY Blog
-SEOTitle: 沐年之夏的博客 | BY Blog
+title: Ten thousand hours
+SEOTitle: utliers of blog | BY Blog
 header-img: img/post-bg-desk.jpg
 email: mxjesse@163.com
 description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 沐年之夏的博客, Jesse, mxjesse, JAVA"
-url: "http://mxjesse.github.io"          # your host, for absolute URL
+keyword: "BY, BY Blog, utliers of blog, Jesse, mxjesse, JAVA"
+url: "https://kakacat.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/mxjesse" # you code repository
+github_repo: "https://github.com/kakaCat" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/市丸银.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/timg.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
