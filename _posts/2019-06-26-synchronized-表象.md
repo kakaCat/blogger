@@ -49,12 +49,14 @@ public static void main(String[] args) {
 
 ### 结果
 
+```
 Method 1 start dome
 Method 1 execute dome
 Method 1 end dome
 Method 2 start dome
 Method 2 execute dome
 Method 2 end dome
+```
 
 ### 结论
 
@@ -78,6 +80,7 @@ public static void main(String[] args) {
 
 ### 结果
 
+```
 Method 1 start dome
 Method 1 execute dome
 Method 1 start dome2
@@ -90,6 +93,7 @@ Method 2 execute dome
 Method 2 execute dome2
 Method 2 end dome
 Method 2 end dome2
+```
 
 ### 结论
 
@@ -138,6 +142,7 @@ public static void main(String[] args) {
 
 ### 结果
 
+```
 Method 1 start dome
 Method 1 execute dome
 Method 3 start dome
@@ -147,6 +152,7 @@ Method 4 execute dome
 Method 3 end dome
 Method 4 end dome
 Method 1 end dome
+```
 
 ### 结论
 
@@ -194,12 +200,14 @@ public synchronized static void methode2(String name){
 
 ### 结果
 
+```
 Method 1 start dome
 Method 1 execute dome
 Method 1 end dome
 Method 2 start dome
 Method 2 execute dome
 Method 2 end dome
+```
 
 ### 结论
 
@@ -222,6 +230,7 @@ public static void main(String[] args) {
 
 ### 结果
 
+```
 Method 1 start dome
 Method 1 execute dome
 Method 1 end dome
@@ -234,6 +243,7 @@ Method 1 end dome2
 Method 2 start dome
 Method 2 execute dome
 Method 2 end dome
+```
 
 ### 结论
 
@@ -329,12 +339,14 @@ public static void main(String[] args) {
 
 ### 结果
 
+```
 Method 1 start dome
 Method 2 start dome
 Method 2 execute dome
 Method 2 end dome
 Method 1 execute dome
 Method 1 end dome
+```
 
 ### 结论
 
@@ -359,6 +371,7 @@ public static void main(String[] args) {
 
 ### 结果
 
+```
 Method 1 start dome
 Method 1 execute dome
 Method 2 start dome
@@ -371,6 +384,7 @@ Method 2 execute dome2
 Method 1 end dome2
 Method 2 end dome
 Method 2 end dome2
+```
 
 ### 结论
 
