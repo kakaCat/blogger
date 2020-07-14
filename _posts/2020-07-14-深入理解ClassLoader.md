@@ -26,11 +26,11 @@ ClassLoader是帮助JVM加载指定文件目录下的Class文件。
 
 #### 双亲委派模型图
 
-![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader_tree_model.png)
+![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader/ClassLoader_tree_model.png)
 
 
 #### 双亲委派模型ClassLoader与文件系统关系图
-![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader_IO_file.png)
+![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader/ClassLoader_IO_file.png)
 
 ### 双亲委派模型加载顺序和优点
 
@@ -55,7 +55,7 @@ ClassLoader是帮助JVM加载指定文件目录下的Class文件。
 #### ClassLoader类结构
 
 
-![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader_IO_file.png)
+![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader/ClassLoader_IO_file.png)
 
 
 #### 实现AppClassLoader和ExtClassLoader委托 要从sun.misc.Launcher聊起
@@ -103,7 +103,7 @@ public Launcher() {
 
 ````
 ##### 图解Launcher 代码实现图
-![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader_Class_app_ext.png)
+![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader/ClassLoader_Class_app_ext.png)
 
 #### 双亲委派模型具体实现
 
@@ -151,7 +151,7 @@ protected Class<?> loadClass(String name, boolean resolve)
 
 ##### 双亲委派模型代码实现图
 
-![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader_loader.png)
+![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader/ClassLoader_loader.png)
 
 
 ### 双亲委派模型带来的问题
@@ -163,21 +163,22 @@ protected Class<?> loadClass(String name, boolean resolve)
 - 不同jar包中的有相同路径同名Class文件（钻石依赖）
 	- 场景 A对象由B对象和C对象组装，B对象由D（v1）对象组装,C对象由D（v2）对象组装。
 
-![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/diamond.png)
+![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader/diamond.png)
 
+### 破坏双亲委派模型
 
 JAVA的双亲委派模型并不是强制规范,所以JAVA提供了contextClassLoader解决以上问题。
 
 #### java.lang.Thread.contextClassLoader
 
-通过线程中共享内存的方式解决Class对象加载问题。应用线程可以获取所有的Class对象。
+通过线程中共享内存的方式解决Class对象加载问题。应用线程可以获取所有的Class对象。默认的contextClassLoader是AppClassLoader。
 
 
+## 参考
 
+https://segmentfault.com/a/1190000013469223
 
-
-
-
+https://www.cnblogs.com/makai/p/11081879.html
 
 
 
