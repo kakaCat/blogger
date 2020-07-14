@@ -55,7 +55,7 @@ ClassLoader是帮助JVM加载指定文件目录下的Class文件。
 #### ClassLoader类结构
 
 
-![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader/ClassLoader_IO_file.png)
+![](https://raw.githubusercontent.com/kakaCat/kakacat.github.io/master/img/ClassLoader/ClassLoader_Class.png)
 
 
 #### 实现AppClassLoader和ExtClassLoader委托 要从sun.misc.Launcher聊起
